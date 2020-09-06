@@ -1,0 +1,49 @@
+.round-progress {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+ 
+.round-progress div {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+ 
+.round-progress div span {
+  position: absolute;
+  font-family: Arial;
+  font-size: 20px;
+  line-height: 75px;
+  height: 75px;
+  width: 75px;
+  left: 12.5px;
+  top: 12.5px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  color: #182c44;
+  font-weight: bold;
+}
+ 
+.round-progress .background { background-color: #b3cef6; }
+ 
+.round-progress .rotate {
+  clip: rect(0 50px 100px 0);
+  background-color: #4b86db;
+}
+ 
+.round-progress .left {
+  clip: rect(0 50px 100px 0);
+  opacity: 1;
+  background-color: #b3cef6;
+}
+ 
+.round-progress .right {
+  clip: rect(0 50px 100px 0);
+  transform: rotate(180deg);
+  opacity: 0;
+  background-color: #4b86db;
+}
